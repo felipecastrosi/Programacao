@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    const salario = Number(prompt("Informe o seu salário."));
+    const aumento = Number(prompt("Informe o seu aumento salarial, em porcentagem."));
     
     //PROCESSAMENTO
-    
+    const salarioFinal = salario + salario * (aumento/100);
     
     //SAÍDA
-    
+    alert("O seu salário final é " + salarioFinal + ", e foram aumentados " + (salarioFinal - salario) + " reais do seu salário.");
+
 </script>

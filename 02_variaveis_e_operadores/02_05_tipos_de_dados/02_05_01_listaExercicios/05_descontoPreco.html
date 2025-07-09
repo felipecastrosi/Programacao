@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    const precoInicial = Number(prompt("Informe o preço do produto."));
+    const desconto = Number(prompt("Informe o desconto aplicado no produto, em porcentagem."));
     
     //PROCESSAMENTO
-
+    const precoFinal = precoInicial - (precoInicial * desconto/100);
     
     //SAÍDA
+    alert("O preço final do produto é de R$" + precoFinal);
 
 </script>
