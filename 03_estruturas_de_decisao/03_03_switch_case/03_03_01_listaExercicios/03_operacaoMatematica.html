@@ -9,10 +9,31 @@
     */
 
     //ENTRADA
-
+    const n1 = Number(prompt("Informe um número."));
+    const n2 = Number(prompt("Informe outro número."));
+    const operacao = prompt("Informe o operador que deseja realizar. (+ Soma, - subtração, * multiplicação, / divisão)").trim();
 
     //PROCESSAMENTO
+    let resultado = 0;
+    switch (operacao) {
+        case "+":
+            resultado = n1 + n2;
+            break;
+        case "-": 
+            resultado = n1 - n2;
+            break;
+        case "*":
+            resultado = n1 * n2;
+            break;
+        case "/": 
+            resultado = (n1 / n2).toFixed(2)
+        default:
+            break;
+    }
 
+    console.log(resultado);
+
+    switch
     
     //SAÍDA
 
