@@ -12,11 +12,41 @@
     */
 
     //ENTRADA
-
+    alert("Respoda as próximas perguntas com S para sim ou N para não.");
+    const tel = prompt("Telefonou para a vítima?").toUpperCase().trim();
+    const loc = prompt("Esteve no local do crime?").toUpperCase().trim();
+    const mor = prompt("Mora perto da vítima?").toUpperCase().trim();
+    const dev = prompt("Devia para a vítima?").toUpperCase().trim();
+    const tra = prompt("Já trabalhou com a vítima?").toUpperCase().trim();
     
     //PROCESSAMENTO
+    let sus = 0;
+
+    if (tel == "S") sus++;
+    if (loc == "S") sus++;
+    if (mor == "S") sus++;
+    if (dev == "S") sus++;
+    if (tra == "S") sus++;
 
 
     //SAÍDA
+    switch (sus) {
+        case 2:
+            alert("Pessoa suspeita");
+            break;
+        case 3: 
+        case 4: 
+            alert("Pessoa cúmplice.");
+            break;
+        case 5: 
+            alert("A pessoa é o assassino.")
+            break;
+        default:
+            alert("Pessoa inocente.")
+            break;
+
+    }
+
+
 
 </script>

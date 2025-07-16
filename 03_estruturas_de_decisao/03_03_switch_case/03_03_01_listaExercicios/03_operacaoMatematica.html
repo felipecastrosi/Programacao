@@ -19,22 +19,47 @@
         case "+":
             resultado = n1 + n2;
             break;
-        case "-": 
+        case "-":
             resultado = n1 - n2;
             break;
         case "*":
             resultado = n1 * n2;
             break;
-        case "/": 
-            resultado = (n1 / n2).toFixed(2)
+        case "/":
+            resultado = (n1 / n2).toFixed(2);
         default:
+            alert("Digita certo animal");
             break;
     }
 
-    console.log(resultado);
+    alert("O resultado é " + resultado);
 
-    switch
-    
+    const ePar = resultado % 2 === 0;
+    switch (ePar) {
+        case true:
+            alert("O número é par.");
+            break;
+        case false:
+            alert("O número é ímpar.");
+    }
+    const ePositivo = resultado >= 0;
+    switch (ePositivo) {
+        case true:
+            alert("O número é positivo.");
+            break;
+        case false:
+            alert("O número é negativo.");
+    }
+
+    const eInteiro = Number.isInteger(resultado)
+    switch (eInteiro) {
+        case true: 
+            alert("O número é inteiro.");
+            break;
+        case false: 
+            alert("O número é negativo.");
+            break;
+    }
     //SAÍDA
 
 </script>
