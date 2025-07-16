@@ -9,7 +9,7 @@
     //ENTRADA
     const hem = prompt("Qual hemisfério você está? N norte, S sul.").toUpperCase().trim();
     const mes = prompt("Qual mês você está? Informe em número.");
-    
+
     //PROCESSAMENTO
     switch (hem) {
         case "S":
@@ -27,16 +27,43 @@
                 case 7:
                 case 8:
                 case 9:
-                    alert("Você está no inverno.")
-                    
-                    
-            
+                    alert("Você está no inverno.");
+                case 10:
+                case 11:
+                case 12:
+                    alert("Você está na primavera.");
                 default:
+                    alert("Informe um número entre 1 e 12.");
                     break;
             }
             break;
-    
+        case "N":
+            switch (mes) {
+                case 1:
+                case 2:
+                case 3:
+                    alert("Você está no inverno.");
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                    alert("Vocẽ está na primavera.");
+                    break;
+                case 7:
+                case 8:
+                case 9:
+                    alert("Você está no verão.");
+                case 10:
+                case 11:
+                case 12:
+                    alert("Você está no outono.");
+                default:
+                    alert("Informe um número entre 1 e 12.");
+                    break;
+            }
+
         default:
+            alert("Informe S para sul e N para norte.")
             break;
     }
 
