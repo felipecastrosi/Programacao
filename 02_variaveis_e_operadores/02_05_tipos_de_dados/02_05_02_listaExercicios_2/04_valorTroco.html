@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    const valorPago = Number(prompt("Qual foi o valor pago?"));
+    const consumo = Number(prompt("Qual o valor do consumo?"))
     
     //PROCESSAMENTO
-    
+    const troco = valorPago - consumo
     
     //SAÍDA
+    document.write("O troco é R$" + troco.toFixed(2));
     
 </script>

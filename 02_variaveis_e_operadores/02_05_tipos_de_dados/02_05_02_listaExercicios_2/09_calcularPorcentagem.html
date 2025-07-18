@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    const precoOri = Number(prompt("Qual o preço original do produto?"));
+    const precoPromo = Number(prompt("Qual o preço do produto durante a campanha promocional?"));
     
     //PROCESSAMENTO
-    
+    const promo = (precoOri - precoPromo) / precoOri * 100;
     
     //SAÍDA
-    
+    document.write("A promoção durante a campanha foi de " + Math.round(promo) + "%");
+
 </script>

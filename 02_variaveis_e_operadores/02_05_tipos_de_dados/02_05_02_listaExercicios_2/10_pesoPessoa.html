@@ -9,11 +9,13 @@
     */
 
     //ENTRADA
-    
+    const peso = Number(prompt("Qual o seu peso em kg?"));
     
     //PROCESSAMENTO
-    
+    const magro = peso - (peso / 100 * 15);
+    const gordo = peso + (peso / 100 * 20);
     
     //SAÍDA
-    
+    document.write("Se você emagrecer %15, pesará "+magro+" kg, se você engordar 20%, pesará "+gordo+" kg.")
+
 </script>

@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-    
+    const cabecas = Number(prompt("Quantas cabeças de gado a fazenda possui?"));
+    const herdeiros = Number(prompt("Quantos herdeiros o fazendeiro possui?"));
     
     //PROCESSAMENTO
-    
+    const heranca = (cabecas * 15 / 100) / herdeiros;
     
     //SAÍDA
+    document.write("Cada herdeiro receberá "+Math.round(heranca)+" cabeças de herança.");
     
 </script>

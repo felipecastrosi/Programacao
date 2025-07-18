@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    const dolares = Number(prompt("Quantos dólares você levará para gastar na viagem?"));
+    const cotacao = Number(prompt("Qual a cotação do dolar para real hoje?"));
     
     //PROCESSAMENTO
-    
+    const reais = dolares * cotacao;
     
     //SAÍDA
+    document.write("Você gastará R$" + reais.toFixed(2) + " na sua viagem.");
     
 </script>

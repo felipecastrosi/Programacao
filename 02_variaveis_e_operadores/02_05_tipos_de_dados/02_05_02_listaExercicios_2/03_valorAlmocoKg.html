@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    const peso = Number(prompt("Qual o peso do seu prato?"));
+    const preco = Number(prompt("Qual o preço do quilo do prato?"));
     
     //PROCESSAMENTO
-    
+    const precoFinal = peso * preco
     
     //SAÍDA
+    document.write("O preço do seu prato foi R$" + precoFinal.toFixed(2));
     
 </script>
