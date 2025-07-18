@@ -6,11 +6,12 @@
     */
 
     //ENTRADA
-
+    const preco = Number(prompt("Qual foi o valor do jantar?"));
     
     //PROCESSAMENTO
-
+    const pagamento = preco + (preco / 10);
     
     //SAÍDA
+    document.write("O valor que você deve pagar é R$" + pagamento.toFixed(2));
 
 </script>

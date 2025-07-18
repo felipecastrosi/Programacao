@@ -7,11 +7,14 @@
     // IR: 11 % do salário bruto
 
     //ENTRADA
-
+    const horasPorMes = Number(prompt("Quantas horas você trabalha por mês?"));
+    const salarioPorHora = Number(prompt("Quanto você recebe por hora trabalhada?"));
     
     //PROCESSAMENTO
-
+    const salarioBruto = horasPorMes * salarioPorHora;
+    const salarioLiquido = salarioBruto - ((salarioBruto / 100 * 8) + (salarioBruto / 100 * 11));
     
     //SAÍDA
+    document.write("Seu salário depois de impostos é " + salarioLiquido);
 
 </script>
