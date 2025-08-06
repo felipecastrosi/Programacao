@@ -7,11 +7,21 @@
     */
 
     //ENTRADA
-
+    num1 = Number(prompt("Informe o primeiro número."));
+    num2 = Number(prompt("Informe o segundo número."));
 
     //PROCESSAMENTO
+    let array = [];
 
+    if (num1 < num2) {
+        array[0] = num1;
+        array[1] = num2;
+    } else {
+        array[0] = num2;
+        array[1] = num1;
+    }
 
     //SAÍDA
 
+    alert(array[0] + " - " + array[1])
 </script>
