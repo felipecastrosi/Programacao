@@ -12,8 +12,17 @@
     const num3 = Number(prompt("Insira o terceiro número."));
 
     //PROCESSAMENTO
-
+    let array = [num1, num2, num3];
+    for(var i = 0; i !== 3; i++) {
+        console.log("for" + array)
+        if(array[i] < array[(i + 1)]) {
+        array = array.splice(i, 2, array[i], array[(i + 1)]);
+        console.log(array)
+        
+        };
+    }
 
     //SAÍDA
+    alert(array)
 
 </script>

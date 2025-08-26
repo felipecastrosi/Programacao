@@ -12,10 +12,23 @@
 
     //ENTRADA
 
+    const fruta1 = prompt("Insira a fruta para a lista de compras.");
+    const fruta2 = prompt("Insira a fruta para a lista de compras.");
+    const fruta3 = prompt("Insira a fruta para a lista de compras.");
+
+    const bebida1 = prompt("Insira a bebida para a lista de compras.");
+    const bebida2 = prompt("Insira a bebida para a lista de compras.");
+    const bebida3 = prompt("Insira a bebida para a lista de compras.");
 
     //PROCESSAMENTO
-
+    const frutas = [];
+    frutas.push(fruta1, fruta2, fruta3);
+    const bebidas = [];
+    bebidas.push(bebida1, bebida2, bebida3);
+    const compras = [];
+    compras.push(frutas, bebidas);
 
     //SAÍDA
+    alert(compras);
 
 </script>
