@@ -13,11 +13,23 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
 
     //PROCESSAMENTO
+    const carro1 = prompt("Insira o carro que deseja adicionar.");
+    const marca1 = prompt("Insira a marca do carro que deseja adicionar.").toUpperCase();
+    const carro2 = prompt("Insira o carro que deseja adicionar.");
+    const marca2 = prompt("Insira a marca do carro que deseja adicionar.").toUpperCase();
+    const carro3 = prompt("Insira o carro que deseja adicionar.");
+    const marca3 = prompt("Insira a marca do carro que deseja adicionar.").toUpperCase();
 
+    (marca1 == "SUV") ? carrosSUV.push(carro1) : (marca1 == "SEDAN") ? carrosSedan.push(carro1) : (marca1 == "HATCH") ? carrosHatch.push(carro1) : alert("Você escreveu a marca errado.");
+    (marca2 == "SUV") ? carrosSUV.push(carro2) : (marca2 == "SEDAN") ? carrosSedan.push(carro2) : (marca2 == "HATCH") ? carrosHatch.push(carro2) : alert("Você escreveu a marca errado.");
+    (marca3 == "SUV") ? carrosSUV.push(carro3) : (marca3 == "SEDAN") ? carrosSedan.push(carro3) : (marca3 == "HATCH") ? carrosHatch.push(carro3) : alert("Você escreveu a marca errado.");
 
     //SAÍDA
+    alert("Lista de carros SUV: " + carrosSUV.join(" - ") + "\nLista de carros Sedan: " + carrosSedan.join(" - ") + "\nLista de carros Hatch: " + carrosHatch.join(" - "));
 
 </script>
