@@ -9,19 +9,18 @@
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
 
     //PROCESSAMENTO
-    let listaDeGeneros = [];
+    let listaMasc = [];
+    let listaFem = [];
     for(nome of listaDeNomes) {
         const genero = prompt(`O nome ${nome} é masculino ou feminino? (M para masculino e F para feminino)`).toUpperCase().trim();
         if(genero == "M") {
-            listaDeGeneros.push("M");
+            listaMasc.push("M");
         } else if(genero == "F") {
-            listaDeGeneros.push("F");
-        } else {
-            listaDeGeneros.push("Indefinido");
+            listaFem.push("F");
         }
     }
     
     //SAÍDA
-    alert(listaDeNomes.join(" - ") + `\n` + listaDeGeneros.join(" - "));
+    alert(`Nomes femininos: ${listaFem.join(" - ")}\nNomes Masculinos: ${listaMasc.join(" - ")}`);
 
 </script>
