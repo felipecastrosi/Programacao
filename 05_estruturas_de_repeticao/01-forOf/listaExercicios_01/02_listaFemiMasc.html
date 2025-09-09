@@ -14,9 +14,9 @@
     for(nome of listaDeNomes) {
         const genero = prompt(`O nome ${nome} é masculino ou feminino? (M para masculino e F para feminino)`).toUpperCase().trim();
         if(genero == "M") {
-            listaMasc.push("M");
+            listaMasc.push(nome);
         } else if(genero == "F") {
-            listaFem.push("F");
+            listaFem.push(nome);
         }
     }
     
