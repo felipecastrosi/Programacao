@@ -11,9 +11,12 @@
     //PROCESSAMENTO
     let joaos = [];
     for (let nome of listaDeNomes) {
-        if ()
+    if ((nome.toUpperCase().replace("Ã", "A")).indexOf("JOAO") !== -1) {
+        joaos.push(nome);
+    }
     }
     
     //SAÍDA
+    alert(joaos.join(" - "))
 
 </script>
