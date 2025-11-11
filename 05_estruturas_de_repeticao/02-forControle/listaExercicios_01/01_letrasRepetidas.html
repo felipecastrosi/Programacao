@@ -10,13 +10,21 @@
     */
 
     //ENTRADA
+    
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
     
+    let ordem = [];
+
     //PROCESSAMENTO
-    for (let letra of listaDeLetras) {
-                
+    for (let i = 0; i < listaDeLetras.length; i++) {
+        let minusculo = listaDeLetras[i].toLowerCase();
+        if (!ordem.includes(minusculo)) {
+            ordem.push(minusculo);
+        }
     };
     
     //SAÍDA
 
+    alert(`A lista é ${ordem.sort()}`);
+    console.log(ordem.join(", "))
 </script>

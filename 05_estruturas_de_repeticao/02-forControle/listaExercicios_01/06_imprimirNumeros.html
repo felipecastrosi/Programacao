@@ -6,11 +6,25 @@
     */
 
     //ENTRADA
-
+    const numI = Number(prompt("Insira o número inicial."));
+    const numF = Number(prompt("Insira o número final."));
     
     //PROCESSAMENTO
+    let pares = [];
+    let impares = [];
+    if (numI < numF) {
+        for (let i = numI; i <= numF; i++) {
+            if (i % 2 == 0) {
+                pares.push(i);
+            } else {
+                impares.push(i);
+            }
+        }
+        alert(`Pares e ímpares entre ${numI} e ${numF}:\nPares: ${pares.join(", ")}\nÍmpares: ${impares.join(", ")}`)
+    } else {
+        alert(`ERRO: Número inicial é menor que número final.`)
+    }
 
-    
     //SAÍDA
 
 </script>

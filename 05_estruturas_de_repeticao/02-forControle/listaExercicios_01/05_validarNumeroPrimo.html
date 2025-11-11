@@ -6,11 +6,21 @@
     */
 
     //ENTRADA
-
+    const num = Number(prompt("Insira um número para verificar se é primo."));
 
     //PROCESSAMENTO
-
+    let primo = true;
+    for (let i = 2; i <= (num - 1); i++) {
+        if (Number.isInteger(num/i)) {
+            primo = false;
+        }
+    }
 
     //SAÍDA
+    if (primo == true && num !== 1) {
+        alert(`O número ${num} é primo.`);
+    } else if (primo == false && num == 1) {
+        alert(`O número ${num} não é primo.`);
+    }
 
 </script>
