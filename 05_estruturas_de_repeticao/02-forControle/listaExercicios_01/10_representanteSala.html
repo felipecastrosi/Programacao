@@ -8,11 +8,52 @@
     */
 
     //ENTRADA
-
-
+    let candidato1 = prompt("Nome do 1º candidato:");
+    let candidato2 = prompt("Nome do 2º candidato:");
+    let candidato3 = prompt("Nome do 3º candidato:");
+    let qtdVotantes = Number(prompt("Quantidade de alunos votantes:"));
+    
     //PROCESSAMENTO
-
-
+    let votos = [];
+    
+    for (let i = 1; i <= qtdVotantes; i++) {
+        let voto = prompt(`Aluno ${i}: Vote em ${candidato1}, ${candidato2} ou ${candidato3}`);
+        votos.push(voto);
+    }
+    
+    let contadorCandidat1 = 0;
+    let contadorCandidat2 = 0;
+    let contadorCandidat3 = 0;
+    
+    for (let voto of votos) {
+        if (voto === candidato1) {
+            contadorCandidat1++;
+        } else if (voto === candidato2) {
+            contadorCandidat2++;
+        } else if (voto === candidato3) {
+            contadorCandidat3++;
+        }
+    }
+    
+    let vencedor = candidato1;
+    let maiorVotacao = contadorCandidat1;
+    
+    if (contadorCandidat2 > maiorVotacao) {
+        vencedor = candidato2;
+        maiorVotacao = contadorCandidat2;
+    }
+    
+    if (contadorCandidat3 > maiorVotacao) {
+        vencedor = candidato3;
+        maiorVotacao = contadorCandidat3;
+    }
+    
     //SAÍDA
+    document.write(`Resultado da Votação<br>`);
+    document.write(`${candidato1}<br>Votos: ${contadorCandidat1}<br>Percentual: ${((contadorCandidat1 / qtdVotantes) * 100).toFixed(2)}%<br>`);
+    document.write(`${candidato2}<br>Votos: ${contadorCandidat2}<br>Percentual: ${((contadorCandidat2 / qtdVotantes) * 100).toFixed(2)}%<br>`);
+    document.write(`${candidato3}<br>Votos: ${contadorCandidat3}<br>Percentual: ${((contadorCandidat3 / qtdVotantes) * 100).toFixed(2)}%<br>`);
+    document.write(`REPRESENTANTE ELEITO<br>${vencedor}`);
+    
 
 </script>

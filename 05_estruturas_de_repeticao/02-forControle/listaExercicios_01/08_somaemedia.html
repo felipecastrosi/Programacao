@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
-
+    let numeros = [];
+    for (let i = 1; i <= 5; i++) {
+        numeros.push(Number(prompt("Insira um número.")));
+    }
 
     //PROCESSAMENTO
-
+    let soma = 0;
+    for (let numero of numeros) {
+        soma = soma + numero;
+    }
+    let media = soma/5;
 
     //SAÍDA
+    alert(`A soma é ${soma} e a média é ${media}`)
 
 </script>

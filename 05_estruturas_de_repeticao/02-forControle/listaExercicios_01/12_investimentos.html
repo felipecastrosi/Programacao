@@ -5,11 +5,16 @@
     */
 
     //ENTRADA
-
+    let investimento = 1000;
+    let rendimento = 0.02;
 
     //PROCESSAMENTO
-
+    let dias = 1;
+    for (dias; investimento <= 2000; investimento = investimento + (investimento*rendimento)) {
+        dias++
+    }
 
     //SAÍDA
+    alert(`Serão necessários ${dias} para que joãozinho consiga um total de R$ 2.000,00.`);
 
 </script>
