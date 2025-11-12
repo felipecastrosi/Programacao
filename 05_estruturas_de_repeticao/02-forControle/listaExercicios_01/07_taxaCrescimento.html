@@ -9,8 +9,12 @@
     let populacao = 80000;
     
     //PROCESSAMENTO
-    
+    let anos = 1;
+    for (populacao; populacao <= 200000; populacao = populacao + (populacao/100)) {
+        anos++
+    }
     
     //SAÍDA
+    alert(`Serão necessários ${anos} para que a população atinja 200000 habitantes`);
 
 </script>
