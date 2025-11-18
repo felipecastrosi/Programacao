@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
-
+    let senha = prompt("Informe uma senha de quatro números.");
+    while (senha.length !== 4 || isNaN(senha)) {
+        senha = prompt("A senha informada não é válida. Informe uma senha com quatro números.");
+    }
 
     //PROCESSAMENTO
-
+    const tentativaSenha = Number(prompt("Insira a senha."));    
 
     //SAÍDA
+    if (tentativaSenha === senha) {
+        alert("Senha Correta");
+    } else {
+        alert("Senha Incorreta");
+    }
 
 </script>

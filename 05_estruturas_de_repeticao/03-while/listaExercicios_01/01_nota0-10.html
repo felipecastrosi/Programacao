@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
+    let nota = Number(prompt("Insira um valor entre 0 e 10."));
     
 
     //PROCESSAMENTO
-     
+     while (nota < 0 || nota > 10 || isNaN(nota)) {
+        nota = Number(prompt("O valor que você inseriu não é válido. Por favor insira um número entre 0 e 10."));
+    }
 
     //SAÍDA
+    alert(`O número inserido foi ${nota}`);
 
 </script>

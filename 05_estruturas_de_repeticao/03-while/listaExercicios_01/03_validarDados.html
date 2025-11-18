@@ -11,7 +11,22 @@
     */
 
     //ENTRADA
+    let nome = prompt("Qual o seu nome?");
+    while (nome.length <= 3) {
+        nome = prompt("Nome inválido. Favor inserir um valor com 3 ou mais caracteres.");
+    }
 
+    let idade = Number(prompt("Insira sua idade."));
+    while (idade < 0 || idade > 150) {
+        idade = Number(prompt("Idade inválida. Insira um valor entre 0 e 150."));
+    }
+
+    let salario = Number(prompt("Insira o seu salario"));
+    while (salario < 0) {
+        salario = Number(prompt("Salário inválido. Insira um valor maior do que 0."));
+    }
+
+    let sexo = idade
 
     //PROCESSAMENTO
 
